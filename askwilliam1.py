@@ -18,8 +18,9 @@ from PIL import Image
 import base64
 
 # Create OpenAI API key environment variable
-os.environ["OPENAI_API_KEY"] = apikey
 
+#os.environ["OPENAI_API_KEY"] = apikey
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 # Initialize Chroma client
 persist_directory = "./chroma_db"
 os.makedirs(persist_directory, exist_ok=True)
