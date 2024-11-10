@@ -19,8 +19,8 @@ import base64
 
 # Create OpenAI API key environment variable
 
-#os.environ["OPENAI_API_KEY"] = apikey
-openai.api_key = st.secrets["OPENAI_API_KEY"]
+os.environ["OPENAI_API_KEY"] = apikey
+
 # Initialize Chroma client
 persist_directory = "./chroma_db"
 os.makedirs(persist_directory, exist_ok=True)
