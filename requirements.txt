@@ -1,7 +1,8 @@
 streamlit==1.39.0
 chromadb
 apikey
-langchain-community
+langchain==0.1.11
+langchain-community==0.0.28
 langchain.llms
 langchain_openai
 langchain.text_splitter
