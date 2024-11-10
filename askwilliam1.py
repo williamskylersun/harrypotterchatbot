@@ -6,7 +6,7 @@ import streamlit as st
 import chromadb
 from chromadb.config import Settings
 from apikey import apikey
-from langchain.llms import OpenAI
+from langchain_community.llms import OpenAI
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
