@@ -5,3 +5,4 @@ apikey
 langchain
 langchain-community
 langchain_openai
+pypdf
