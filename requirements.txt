@@ -1,5 +1,5 @@
 streamlit==1.39.0
-chromadb==0.3.29
+chromadb
 apikey
 langchain
 langchain-community
