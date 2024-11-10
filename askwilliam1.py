@@ -133,7 +133,8 @@ if 'history' not in st.session_state:
 
 # Asking questions
 st.markdown('<p style="color:white;">Magical Inquiry - What mystical knowledge do you seek, young wizard?</p>', unsafe_allow_html=True)
-question = st.text_input("")
+#question = st.text_input("")
+question = st.text_input("Enter your question here", key="question_input", label_visibility="collapsed")
 
 # Sample questions
 st.markdown("""
