@@ -20,12 +20,14 @@ os.environ["OPENAI_API_KEY"] = apikey
 # Initialize Chroma client
 persist_directory = "./chroma_db"
 os.makedirs(persist_directory, exist_ok=True)
-chroma_client = chromadb.Client(Settings(
-    chroma_api_impl="chromadb.api.segment.SegmentAPI",
-    allow_reset=True,
-    is_persistent=True,
-    persist_directory=persist_directory
-))
+
+chroma_client = chromadb.PersistentClient(
+    path=persist_directory,
+    settings=Settings(
+        chroma_api_impl="chromadb.api.segment.SegmentAPI",
+        allow_reset=True
+    )
+)
 
 def get_base64_of_bin_file(bin_file):
     with open(bin_file, 'rb') as f:
