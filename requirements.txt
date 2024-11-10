@@ -1,6 +1,5 @@
 streamlit
 chromadb
-base64
 apikey
 langchain-community
 langchain.llms
@@ -11,4 +10,3 @@ langchain_community.document_loaders
 langchain.chains
 langchain.memory
 langchain.prompts
-PIL
